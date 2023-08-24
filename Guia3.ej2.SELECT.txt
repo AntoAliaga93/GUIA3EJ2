@@ -1,0 +1,13 @@
+b)
+SELECT  dni, nombre, apellido
+FROM cliente c
+INNER JOIN mascota m 
+ON c.idCliente = m.idCliente
+WHERE m.especie LIKE 'loro'
+
+c)
+SELECT  `alias`, `sexo`, `raza`
+FROM `mascota`
+INNER JOIN visita 
+ON visita.idMascota = mascota.idMascota
+WHERE visita.fechaVisita = '2023-06-25'
